@@ -1,0 +1,129 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/maciej/go-benchmark
+cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+
+BenchmarkIndexByte
+BenchmarkIndexByte/last
+BenchmarkIndexByte/last/stdlib_2
+BenchmarkIndexByte/last/stdlib_2-12         	437318978	         2.524 ns/op
+BenchmarkIndexByte/last/loop_2
+BenchmarkIndexByte/last/loop_2-12           	1000000000	         1.117 ns/op
+BenchmarkIndexByte/last/stdlib_4
+BenchmarkIndexByte/last/stdlib_4-12         	479033838	         2.454 ns/op
+BenchmarkIndexByte/last/loop_4
+BenchmarkIndexByte/last/loop_4-12           	415177660	         2.934 ns/op
+BenchmarkIndexByte/last/stdlib_8
+BenchmarkIndexByte/last/stdlib_8-12         	486177312	         2.454 ns/op
+BenchmarkIndexByte/last/loop_8
+BenchmarkIndexByte/last/loop_8-12           	257296491	         4.673 ns/op
+BenchmarkIndexByte/last/stdlib_16
+BenchmarkIndexByte/last/stdlib_16-12        	425057862	         2.742 ns/op
+BenchmarkIndexByte/last/loop_16
+BenchmarkIndexByte/last/loop_16-12          	138927558	         8.944 ns/op
+BenchmarkIndexByte/last/stdlib_32
+BenchmarkIndexByte/last/stdlib_32-12        	302137048	         3.949 ns/op
+BenchmarkIndexByte/last/loop_32
+BenchmarkIndexByte/last/loop_32-12          	69822121	        16.62 ns/op
+BenchmarkIndexByte/last/stdlib_64
+BenchmarkIndexByte/last/stdlib_64-12        	320307598	         3.735 ns/op
+BenchmarkIndexByte/last/loop_64
+BenchmarkIndexByte/last/loop_64-12          	36769824	        32.21 ns/op
+BenchmarkIndexByte/last/stdlib_128
+BenchmarkIndexByte/last/stdlib_128-12       	247571871	         4.821 ns/op
+BenchmarkIndexByte/last/loop_128
+BenchmarkIndexByte/last/loop_128-12         	16792052	        69.15 ns/op
+BenchmarkIndexByte/last/stdlib_256
+BenchmarkIndexByte/last/stdlib_256-12       	168363409	         7.251 ns/op
+BenchmarkIndexByte/last/loop_256
+BenchmarkIndexByte/last/loop_256-12         	 8943140	       132.5 ns/op
+BenchmarkIndexByte/last/stdlib_512
+BenchmarkIndexByte/last/stdlib_512-12       	100000000	        11.69 ns/op
+BenchmarkIndexByte/last/loop_512
+BenchmarkIndexByte/last/loop_512-12         	 4609780	       257.9 ns/op
+BenchmarkIndexByte/last/stdlib_1024
+BenchmarkIndexByte/last/stdlib_1024-12      	45919112	        24.88 ns/op
+BenchmarkIndexByte/last/loop_1024
+BenchmarkIndexByte/last/loop_1024-12        	 2298663	       511.9 ns/op
+BenchmarkIndexByte/last/stdlib_2048
+BenchmarkIndexByte/last/stdlib_2048-12      	31835330	        35.91 ns/op
+BenchmarkIndexByte/last/loop_2048
+BenchmarkIndexByte/last/loop_2048-12        	 1183188	      1015 ns/op
+BenchmarkIndexByte/last/stdlib_4096
+BenchmarkIndexByte/last/stdlib_4096-12      	16684155	        70.21 ns/op
+BenchmarkIndexByte/last/loop_4096
+BenchmarkIndexByte/last/loop_4096-12        	  582656	      2014 ns/op
+
+BenchmarkSplit/regular
+BenchmarkSplit/regular/stdlib_4096/4096
+BenchmarkSplit/regular/stdlib_4096/4096-12         	   22767	     49066 ns/op
+BenchmarkSplit/regular/loop_4096/4096
+BenchmarkSplit/regular/loop_4096/4096-12           	   49962	     22822 ns/op
+BenchmarkSplit/regular/index_byte_4096/4096
+BenchmarkSplit/regular/index_byte_4096/4096-12     	   24716	     46676 ns/op
+BenchmarkSplit/regular/stdlib_2048/4096
+BenchmarkSplit/regular/stdlib_2048/4096-12         	   44095	     25809 ns/op
+BenchmarkSplit/regular/loop_2048/4096
+BenchmarkSplit/regular/loop_2048/4096-12           	   86160	     12725 ns/op
+BenchmarkSplit/regular/index_byte_2048/4096
+BenchmarkSplit/regular/index_byte_2048/4096-12     	   46935	     24400 ns/op
+BenchmarkSplit/regular/stdlib_1024/4096
+BenchmarkSplit/regular/stdlib_1024/4096-12         	   88176	     12799 ns/op
+BenchmarkSplit/regular/loop_1024/4096
+BenchmarkSplit/regular/loop_1024/4096-12           	  159183	      6649 ns/op
+BenchmarkSplit/regular/index_byte_1024/4096
+BenchmarkSplit/regular/index_byte_1024/4096-12     	   85380	     12308 ns/op
+BenchmarkSplit/regular/stdlib_512/4096
+BenchmarkSplit/regular/stdlib_512/4096-12          	  169921	      6444 ns/op
+BenchmarkSplit/regular/loop_512/4096
+BenchmarkSplit/regular/loop_512/4096-12            	  248240	      4189 ns/op
+BenchmarkSplit/regular/index_byte_512/4096
+BenchmarkSplit/regular/index_byte_512/4096-12      	  185113	      6896 ns/op
+BenchmarkSplit/regular/stdlib_256/4096
+BenchmarkSplit/regular/stdlib_256/4096-12          	  314754	      3276 ns/op
+BenchmarkSplit/regular/loop_256/4096
+BenchmarkSplit/regular/loop_256/4096-12            	  418650	      2699 ns/op
+BenchmarkSplit/regular/index_byte_256/4096
+BenchmarkSplit/regular/index_byte_256/4096-12      	  343684	      3088 ns/op
+BenchmarkSplit/regular/stdlib_128/4096
+BenchmarkSplit/regular/stdlib_128/4096-12          	  623230	      1694 ns/op
+BenchmarkSplit/regular/loop_128/4096
+BenchmarkSplit/regular/loop_128/4096-12            	  356944	      3210 ns/op
+BenchmarkSplit/regular/index_byte_128/4096
+BenchmarkSplit/regular/index_byte_128/4096-12      	  637674	      1622 ns/op
+BenchmarkSplit/regular/stdlib_64/4096
+BenchmarkSplit/regular/stdlib_64/4096-12           	 1217062	       982.2 ns/op
+BenchmarkSplit/regular/loop_64/4096
+BenchmarkSplit/regular/loop_64/4096-12             	  712480	      1594 ns/op
+BenchmarkSplit/regular/index_byte_64/4096
+BenchmarkSplit/regular/index_byte_64/4096-12       	 1254670	       941.3 ns/op
+BenchmarkSplit/regular/stdlib_32/4096
+BenchmarkSplit/regular/stdlib_32/4096-12           	 2005270	       599.7 ns/op
+BenchmarkSplit/regular/loop_32/4096
+BenchmarkSplit/regular/loop_32/4096-12             	  639949	      1624 ns/op
+BenchmarkSplit/regular/index_byte_32/4096
+BenchmarkSplit/regular/index_byte_32/4096-12       	 2045320	       576.3 ns/op
+BenchmarkSplit/regular/stdlib_16/4096
+BenchmarkSplit/regular/stdlib_16/4096-12           	 3022520	       398.1 ns/op
+BenchmarkSplit/regular/loop_16/4096
+BenchmarkSplit/regular/loop_16/4096-12             	  834006	      1300 ns/op
+BenchmarkSplit/regular/index_byte_16/4096
+BenchmarkSplit/regular/index_byte_16/4096-12       	 3050644	       385.8 ns/op
+BenchmarkSplit/regular/stdlib_8/4096
+BenchmarkSplit/regular/stdlib_8/4096-12            	 3988804	       298.3 ns/op
+BenchmarkSplit/regular/loop_8/4096
+BenchmarkSplit/regular/loop_8/4096-12              	  987259	      1123 ns/op
+BenchmarkSplit/regular/index_byte_8/4096
+BenchmarkSplit/regular/index_byte_8/4096-12        	 4045662	       292.5 ns/op
+BenchmarkSplit/regular/stdlib_4/4096
+BenchmarkSplit/regular/stdlib_4/4096-12            	 5133518	       233.5 ns/op
+BenchmarkSplit/regular/loop_4/4096
+BenchmarkSplit/regular/loop_4/4096-12              	 1265976	       948.0 ns/op
+BenchmarkSplit/regular/index_byte_4/4096
+BenchmarkSplit/regular/index_byte_4/4096-12        	 5226075	       225.0 ns/op
+BenchmarkSplit/regular/stdlib_2/4096
+BenchmarkSplit/regular/stdlib_2/4096-12            	 5991505	       192.5 ns/op
+BenchmarkSplit/regular/loop_2/4096
+BenchmarkSplit/regular/loop_2/4096-12              	 1811514	       659.1 ns/op
+BenchmarkSplit/regular/index_byte_2/4096
+BenchmarkSplit/regular/index_byte_2/4096-12        	 6136335	       189.3 ns/op
