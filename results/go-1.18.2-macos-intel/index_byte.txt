@@ -55,75 +55,77 @@ BenchmarkIndexByte/last/loop_4096
 BenchmarkIndexByte/last/loop_4096-12        	  582656	      2014 ns/op
 
 BenchmarkSplit/regular
-BenchmarkSplit/regular/stdlib_4096/4096
-BenchmarkSplit/regular/stdlib_4096/4096-12         	   22767	     49066 ns/op
-BenchmarkSplit/regular/loop_4096/4096
-BenchmarkSplit/regular/loop_4096/4096-12           	   49962	     22822 ns/op
-BenchmarkSplit/regular/index_byte_4096/4096
-BenchmarkSplit/regular/index_byte_4096/4096-12     	   24716	     46676 ns/op
-BenchmarkSplit/regular/stdlib_2048/4096
-BenchmarkSplit/regular/stdlib_2048/4096-12         	   44095	     25809 ns/op
-BenchmarkSplit/regular/loop_2048/4096
-BenchmarkSplit/regular/loop_2048/4096-12           	   86160	     12725 ns/op
-BenchmarkSplit/regular/index_byte_2048/4096
-BenchmarkSplit/regular/index_byte_2048/4096-12     	   46935	     24400 ns/op
-BenchmarkSplit/regular/stdlib_1024/4096
-BenchmarkSplit/regular/stdlib_1024/4096-12         	   88176	     12799 ns/op
-BenchmarkSplit/regular/loop_1024/4096
-BenchmarkSplit/regular/loop_1024/4096-12           	  159183	      6649 ns/op
-BenchmarkSplit/regular/index_byte_1024/4096
-BenchmarkSplit/regular/index_byte_1024/4096-12     	   85380	     12308 ns/op
-BenchmarkSplit/regular/stdlib_512/4096
-BenchmarkSplit/regular/stdlib_512/4096-12          	  169921	      6444 ns/op
-BenchmarkSplit/regular/loop_512/4096
-BenchmarkSplit/regular/loop_512/4096-12            	  248240	      4189 ns/op
-BenchmarkSplit/regular/index_byte_512/4096
-BenchmarkSplit/regular/index_byte_512/4096-12      	  185113	      6896 ns/op
-BenchmarkSplit/regular/stdlib_256/4096
-BenchmarkSplit/regular/stdlib_256/4096-12          	  314754	      3276 ns/op
-BenchmarkSplit/regular/loop_256/4096
-BenchmarkSplit/regular/loop_256/4096-12            	  418650	      2699 ns/op
-BenchmarkSplit/regular/index_byte_256/4096
-BenchmarkSplit/regular/index_byte_256/4096-12      	  343684	      3088 ns/op
-BenchmarkSplit/regular/stdlib_128/4096
-BenchmarkSplit/regular/stdlib_128/4096-12          	  623230	      1694 ns/op
-BenchmarkSplit/regular/loop_128/4096
-BenchmarkSplit/regular/loop_128/4096-12            	  356944	      3210 ns/op
-BenchmarkSplit/regular/index_byte_128/4096
-BenchmarkSplit/regular/index_byte_128/4096-12      	  637674	      1622 ns/op
-BenchmarkSplit/regular/stdlib_64/4096
-BenchmarkSplit/regular/stdlib_64/4096-12           	 1217062	       982.2 ns/op
-BenchmarkSplit/regular/loop_64/4096
-BenchmarkSplit/regular/loop_64/4096-12             	  712480	      1594 ns/op
-BenchmarkSplit/regular/index_byte_64/4096
-BenchmarkSplit/regular/index_byte_64/4096-12       	 1254670	       941.3 ns/op
-BenchmarkSplit/regular/stdlib_32/4096
-BenchmarkSplit/regular/stdlib_32/4096-12           	 2005270	       599.7 ns/op
-BenchmarkSplit/regular/loop_32/4096
-BenchmarkSplit/regular/loop_32/4096-12             	  639949	      1624 ns/op
-BenchmarkSplit/regular/index_byte_32/4096
-BenchmarkSplit/regular/index_byte_32/4096-12       	 2045320	       576.3 ns/op
-BenchmarkSplit/regular/stdlib_16/4096
-BenchmarkSplit/regular/stdlib_16/4096-12           	 3022520	       398.1 ns/op
-BenchmarkSplit/regular/loop_16/4096
-BenchmarkSplit/regular/loop_16/4096-12             	  834006	      1300 ns/op
-BenchmarkSplit/regular/index_byte_16/4096
-BenchmarkSplit/regular/index_byte_16/4096-12       	 3050644	       385.8 ns/op
-BenchmarkSplit/regular/stdlib_8/4096
-BenchmarkSplit/regular/stdlib_8/4096-12            	 3988804	       298.3 ns/op
-BenchmarkSplit/regular/loop_8/4096
-BenchmarkSplit/regular/loop_8/4096-12              	  987259	      1123 ns/op
-BenchmarkSplit/regular/index_byte_8/4096
-BenchmarkSplit/regular/index_byte_8/4096-12        	 4045662	       292.5 ns/op
-BenchmarkSplit/regular/stdlib_4/4096
-BenchmarkSplit/regular/stdlib_4/4096-12            	 5133518	       233.5 ns/op
-BenchmarkSplit/regular/loop_4/4096
-BenchmarkSplit/regular/loop_4/4096-12              	 1265976	       948.0 ns/op
-BenchmarkSplit/regular/index_byte_4/4096
-BenchmarkSplit/regular/index_byte_4/4096-12        	 5226075	       225.0 ns/op
-BenchmarkSplit/regular/stdlib_2/4096
-BenchmarkSplit/regular/stdlib_2/4096-12            	 5991505	       192.5 ns/op
-BenchmarkSplit/regular/loop_2/4096
-BenchmarkSplit/regular/loop_2/4096-12              	 1811514	       659.1 ns/op
-BenchmarkSplit/regular/index_byte_2/4096
-BenchmarkSplit/regular/index_byte_2/4096-12        	 6136335	       189.3 ns/op
+BenchmarkSplit
+BenchmarkSplit/regular
+BenchmarkSplit/regular/stdlib__4096/4096_(every_1_bytes)
+BenchmarkSplit/regular/stdlib__4096/4096_(every_1_bytes)-12         	   21841	     51587 ns/op
+BenchmarkSplit/regular/loop_4096/4096_(every_1_bytes)
+BenchmarkSplit/regular/loop_4096/4096_(every_1_bytes)-12            	   51210	     22777 ns/op
+BenchmarkSplit/regular/index_byte_4096/4096_(every_1_bytes)
+BenchmarkSplit/regular/index_byte_4096/4096_(every_1_bytes)-12      	   25206	     46954 ns/op
+BenchmarkSplit/regular/stdlib__2048/4096_(every_2_bytes)
+BenchmarkSplit/regular/stdlib__2048/4096_(every_2_bytes)-12         	   46050	     25745 ns/op
+BenchmarkSplit/regular/loop_2048/4096_(every_2_bytes)
+BenchmarkSplit/regular/loop_2048/4096_(every_2_bytes)-12            	   90450	     12498 ns/op
+BenchmarkSplit/regular/index_byte_2048/4096_(every_2_bytes)
+BenchmarkSplit/regular/index_byte_2048/4096_(every_2_bytes)-12      	   45164	     24416 ns/op
+BenchmarkSplit/regular/stdlib__1024/4096_(every_4_bytes)
+BenchmarkSplit/regular/stdlib__1024/4096_(every_4_bytes)-12         	   88689	     12778 ns/op
+BenchmarkSplit/regular/loop_1024/4096_(every_4_bytes)
+BenchmarkSplit/regular/loop_1024/4096_(every_4_bytes)-12            	  157082	      6790 ns/op
+BenchmarkSplit/regular/index_byte_1024/4096_(every_4_bytes)
+BenchmarkSplit/regular/index_byte_1024/4096_(every_4_bytes)-12      	   89848	     12187 ns/op
+BenchmarkSplit/regular/stdlib__512/4096_(every_8_bytes)
+BenchmarkSplit/regular/stdlib__512/4096_(every_8_bytes)-12          	  172611	      6424 ns/op
+BenchmarkSplit/regular/loop_512/4096_(every_8_bytes)
+BenchmarkSplit/regular/loop_512/4096_(every_8_bytes)-12             	  244236	      4214 ns/op
+BenchmarkSplit/regular/index_byte_512/4096_(every_8_bytes)
+BenchmarkSplit/regular/index_byte_512/4096_(every_8_bytes)-12       	  175382	      6157 ns/op
+BenchmarkSplit/regular/stdlib__256/4096_(every_16_bytes)
+BenchmarkSplit/regular/stdlib__256/4096_(every_16_bytes)-12         	  353360	      3254 ns/op
+BenchmarkSplit/regular/loop_256/4096_(every_16_bytes)
+BenchmarkSplit/regular/loop_256/4096_(every_16_bytes)-12            	  448326	      2667 ns/op
+BenchmarkSplit/regular/index_byte_256/4096_(every_16_bytes)
+BenchmarkSplit/regular/index_byte_256/4096_(every_16_bytes)-12      	  356280	      3084 ns/op
+BenchmarkSplit/regular/stdlib__128/4096_(every_32_bytes)
+BenchmarkSplit/regular/stdlib__128/4096_(every_32_bytes)-12         	  605361	      1726 ns/op
+BenchmarkSplit/regular/loop_128/4096_(every_32_bytes)
+BenchmarkSplit/regular/loop_128/4096_(every_32_bytes)-12            	  360928	      3227 ns/op
+BenchmarkSplit/regular/index_byte_128/4096_(every_32_bytes)
+BenchmarkSplit/regular/index_byte_128/4096_(every_32_bytes)-12      	  740144	      1614 ns/op
+BenchmarkSplit/regular/stdlib__64/4096_(every_64_bytes)
+BenchmarkSplit/regular/stdlib__64/4096_(every_64_bytes)-12          	 1209298	       983.7 ns/op
+BenchmarkSplit/regular/loop_64/4096_(every_64_bytes)
+BenchmarkSplit/regular/loop_64/4096_(every_64_bytes)-12             	  643939	      1617 ns/op
+BenchmarkSplit/regular/index_byte_64/4096_(every_64_bytes)
+BenchmarkSplit/regular/index_byte_64/4096_(every_64_bytes)-12       	 1265182	       944.2 ns/op
+BenchmarkSplit/regular/stdlib__32/4096_(every_128_bytes)
+BenchmarkSplit/regular/stdlib__32/4096_(every_128_bytes)-12         	 2005394	       595.5 ns/op
+BenchmarkSplit/regular/loop_32/4096_(every_128_bytes)
+BenchmarkSplit/regular/loop_32/4096_(every_128_bytes)-12            	  643540	      1672 ns/op
+BenchmarkSplit/regular/index_byte_32/4096_(every_128_bytes)
+BenchmarkSplit/regular/index_byte_32/4096_(every_128_bytes)-12      	 2070046	       571.0 ns/op
+BenchmarkSplit/regular/stdlib__16/4096_(every_256_bytes)
+BenchmarkSplit/regular/stdlib__16/4096_(every_256_bytes)-12         	 3019016	       395.0 ns/op
+BenchmarkSplit/regular/loop_16/4096_(every_256_bytes)
+BenchmarkSplit/regular/loop_16/4096_(every_256_bytes)-12            	  803270	      1304 ns/op
+BenchmarkSplit/regular/index_byte_16/4096_(every_256_bytes)
+BenchmarkSplit/regular/index_byte_16/4096_(every_256_bytes)-12      	 3095602	       383.9 ns/op
+BenchmarkSplit/regular/stdlib__8/4096_(every_512_bytes)
+BenchmarkSplit/regular/stdlib__8/4096_(every_512_bytes)-12          	 4038997	       297.5 ns/op
+BenchmarkSplit/regular/loop_8/4096_(every_512_bytes)
+BenchmarkSplit/regular/loop_8/4096_(every_512_bytes)-12             	  948709	      1132 ns/op
+BenchmarkSplit/regular/index_byte_8/4096_(every_512_bytes)
+BenchmarkSplit/regular/index_byte_8/4096_(every_512_bytes)-12       	 4130055	       291.3 ns/op
+BenchmarkSplit/regular/stdlib__4/4096_(every_1024_bytes)
+BenchmarkSplit/regular/stdlib__4/4096_(every_1024_bytes)-12         	 5199528	       229.8 ns/op
+BenchmarkSplit/regular/loop_4/4096_(every_1024_bytes)
+BenchmarkSplit/regular/loop_4/4096_(every_1024_bytes)-12            	 1259064	      1074 ns/op
+BenchmarkSplit/regular/index_byte_4/4096_(every_1024_bytes)
+BenchmarkSplit/regular/index_byte_4/4096_(every_1024_bytes)-12      	 5118482	       224.9 ns/op
+BenchmarkSplit/regular/stdlib__2/4096_(every_2048_bytes)
+BenchmarkSplit/regular/stdlib__2/4096_(every_2048_bytes)-12         	 6120465	       193.2 ns/op
+BenchmarkSplit/regular/loop_2/4096_(every_2048_bytes)
+BenchmarkSplit/regular/loop_2/4096_(every_2048_bytes)-12            	 1808124	       668.1 ns/op
+BenchmarkSplit/regular/index_byte_2/4096_(every_2048_bytes)
+BenchmarkSplit/regular/index_byte_2/4096_(every_2048_bytes)-12      	 6126540	       188.9 ns/op

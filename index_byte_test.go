@@ -94,26 +94,26 @@ func BenchmarkSplit(b *testing.B) {
 			// initialize slice with characters
 			for j := 0; j < sliceLength; j++ {
 				if j%k == 0 {
-					s[j] = '/'
 					n++
+					s[j] = '/'
 				} else {
 					s[j] = 'a' + byte(rnd.Int31n(26))
 				}
 			}
 
-			b.Run(fmt.Sprintf("stdlib %d/%d", n, sliceLength), func(b *testing.B) {
+			b.Run(fmt.Sprintf("stdlib  %d/%d (every %d bytes)", n, sliceLength, k), func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
 					bytes.Split(s, []byte{'/'})
 				}
 			})
 
-			b.Run(fmt.Sprintf("loop %d/%d", n, sliceLength), func(b *testing.B) {
+			b.Run(fmt.Sprintf("loop %d/%d (every %d bytes)", n, sliceLength, k), func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
 					loopSplit(s, '/')
 				}
 			})
 
-			b.Run(fmt.Sprintf("index_byte %d/%d", n, sliceLength), func(b *testing.B) {
+			b.Run(fmt.Sprintf("index_byte %d/%d (every %d bytes)", n, sliceLength, k), func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
 					indexByteSplit(s, '/')
 				}
