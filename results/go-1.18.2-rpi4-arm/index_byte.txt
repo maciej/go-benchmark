@@ -1,20 +1,20 @@
 goos: linux
 goarch: arm
 pkg: github.com/maciej/go-benchmark
-BenchmarkIndexByte/last/stdlib_2-12         	473743034	         2.511 ns/op
-BenchmarkIndexByte/last/loop_2-12           	1000000000	         1.136 ns/op
-BenchmarkIndexByte/last/stdlib_4-12         	483259766	         2.501 ns/op
-BenchmarkIndexByte/last/loop_4-12           	406824536	         2.919 ns/op
-BenchmarkIndexByte/last/stdlib_8-12         	473977170	         2.587 ns/op
-BenchmarkIndexByte/last/loop_8-12           	248544330	         4.839 ns/op
-BenchmarkIndexByte/last/stdlib_16-12        	422872231	         2.805 ns/op
-BenchmarkIndexByte/last/loop_16-12          	135814080	         8.796 ns/op
-BenchmarkIndexByte/last/stdlib_32-12        	304373978	         3.965 ns/op
-BenchmarkIndexByte/last/loop_32-12          	67375448	        16.71 ns/op
-BenchmarkIndexByte/last/stdlib_64-12        	316181570	         3.753 ns/op
-BenchmarkIndexByte/last/loop_64-12          	36216891	        32.73 ns/op
-BenchmarkIndexByte/last/stdlib_128-12       	244490186	         4.926 ns/op
-BenchmarkIndexByte/last/loop_128-12         	15677424	        71.10 ns/op
+BenchmarkIndexByte/last/stdlib_2-4         	35362713	        36.13 ns/op
+BenchmarkIndexByte/last/loop_2-4           	145373161	         8.042 ns/op
+BenchmarkIndexByte/last/stdlib_4-4         	68971168	        18.51 ns/op
+BenchmarkIndexByte/last/loop_4-4           	91032432	        12.10 ns/op
+BenchmarkIndexByte/last/stdlib_8-4         	48449024	        25.48 ns/op
+BenchmarkIndexByte/last/loop_8-4           	59493938	        20.10 ns/op
+BenchmarkIndexByte/last/stdlib_16-4        	33137180	        36.24 ns/op
+BenchmarkIndexByte/last/loop_16-4          	33050781	        43.83 ns/op
+BenchmarkIndexByte/last/stdlib_32-4        	15811360	        75.22 ns/op
+BenchmarkIndexByte/last/loop_32-4          	14579162	        82.83 ns/op
+BenchmarkIndexByte/last/stdlib_64-4        	 9221581	       128.1 ns/op
+BenchmarkIndexByte/last/loop_64-4          	 8185344	       148.9 ns/op
+BenchmarkIndexByte/last/stdlib_128-4       	 4388454	       236.8 ns/op
+BenchmarkIndexByte/last/loop_128-4         	 4366312	       276.4 ns/op
 
 BenchmarkSplit/regular/stdlib__4096/4096_(every_1_bytes)-4         	    4626	    236910 ns/op
 BenchmarkSplit/regular/loop_4096/4096_(every_1_bytes)-4            	    9213	    129767 ns/op
