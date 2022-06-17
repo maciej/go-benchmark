@@ -3,129 +3,64 @@ goarch: amd64
 pkg: github.com/maciej/go-benchmark
 cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
 
-BenchmarkIndexByte
-BenchmarkIndexByte/last
-BenchmarkIndexByte/last/stdlib_2
 BenchmarkIndexByte/last/stdlib_2-12         	437318978	         2.524 ns/op
-BenchmarkIndexByte/last/loop_2
 BenchmarkIndexByte/last/loop_2-12           	1000000000	         1.117 ns/op
-BenchmarkIndexByte/last/stdlib_4
 BenchmarkIndexByte/last/stdlib_4-12         	479033838	         2.454 ns/op
-BenchmarkIndexByte/last/loop_4
 BenchmarkIndexByte/last/loop_4-12           	415177660	         2.934 ns/op
-BenchmarkIndexByte/last/stdlib_8
 BenchmarkIndexByte/last/stdlib_8-12         	486177312	         2.454 ns/op
-BenchmarkIndexByte/last/loop_8
 BenchmarkIndexByte/last/loop_8-12           	257296491	         4.673 ns/op
-BenchmarkIndexByte/last/stdlib_16
 BenchmarkIndexByte/last/stdlib_16-12        	425057862	         2.742 ns/op
-BenchmarkIndexByte/last/loop_16
 BenchmarkIndexByte/last/loop_16-12          	138927558	         8.944 ns/op
-BenchmarkIndexByte/last/stdlib_32
 BenchmarkIndexByte/last/stdlib_32-12        	302137048	         3.949 ns/op
-BenchmarkIndexByte/last/loop_32
 BenchmarkIndexByte/last/loop_32-12          	69822121	        16.62 ns/op
-BenchmarkIndexByte/last/stdlib_64
 BenchmarkIndexByte/last/stdlib_64-12        	320307598	         3.735 ns/op
-BenchmarkIndexByte/last/loop_64
 BenchmarkIndexByte/last/loop_64-12          	36769824	        32.21 ns/op
-BenchmarkIndexByte/last/stdlib_128
 BenchmarkIndexByte/last/stdlib_128-12       	247571871	         4.821 ns/op
-BenchmarkIndexByte/last/loop_128
 BenchmarkIndexByte/last/loop_128-12         	16792052	        69.15 ns/op
-BenchmarkIndexByte/last/stdlib_256
 BenchmarkIndexByte/last/stdlib_256-12       	168363409	         7.251 ns/op
-BenchmarkIndexByte/last/loop_256
 BenchmarkIndexByte/last/loop_256-12         	 8943140	       132.5 ns/op
-BenchmarkIndexByte/last/stdlib_512
 BenchmarkIndexByte/last/stdlib_512-12       	100000000	        11.69 ns/op
-BenchmarkIndexByte/last/loop_512
 BenchmarkIndexByte/last/loop_512-12         	 4609780	       257.9 ns/op
-BenchmarkIndexByte/last/stdlib_1024
 BenchmarkIndexByte/last/stdlib_1024-12      	45919112	        24.88 ns/op
-BenchmarkIndexByte/last/loop_1024
 BenchmarkIndexByte/last/loop_1024-12        	 2298663	       511.9 ns/op
-BenchmarkIndexByte/last/stdlib_2048
 BenchmarkIndexByte/last/stdlib_2048-12      	31835330	        35.91 ns/op
-BenchmarkIndexByte/last/loop_2048
 BenchmarkIndexByte/last/loop_2048-12        	 1183188	      1015 ns/op
-BenchmarkIndexByte/last/stdlib_4096
 BenchmarkIndexByte/last/stdlib_4096-12      	16684155	        70.21 ns/op
-BenchmarkIndexByte/last/loop_4096
 BenchmarkIndexByte/last/loop_4096-12        	  582656	      2014 ns/op
 
-BenchmarkSplit/regular
-BenchmarkSplit
-BenchmarkSplit/regular
-BenchmarkSplit/regular/stdlib__4096/4096_(every_1_bytes)
 BenchmarkSplit/regular/stdlib__4096/4096_(every_1_bytes)-12         	   21841	     51587 ns/op
-BenchmarkSplit/regular/loop_4096/4096_(every_1_bytes)
 BenchmarkSplit/regular/loop_4096/4096_(every_1_bytes)-12            	   51210	     22777 ns/op
-BenchmarkSplit/regular/index_byte_4096/4096_(every_1_bytes)
 BenchmarkSplit/regular/index_byte_4096/4096_(every_1_bytes)-12      	   25206	     46954 ns/op
-BenchmarkSplit/regular/stdlib__2048/4096_(every_2_bytes)
 BenchmarkSplit/regular/stdlib__2048/4096_(every_2_bytes)-12         	   46050	     25745 ns/op
-BenchmarkSplit/regular/loop_2048/4096_(every_2_bytes)
 BenchmarkSplit/regular/loop_2048/4096_(every_2_bytes)-12            	   90450	     12498 ns/op
-BenchmarkSplit/regular/index_byte_2048/4096_(every_2_bytes)
 BenchmarkSplit/regular/index_byte_2048/4096_(every_2_bytes)-12      	   45164	     24416 ns/op
-BenchmarkSplit/regular/stdlib__1024/4096_(every_4_bytes)
 BenchmarkSplit/regular/stdlib__1024/4096_(every_4_bytes)-12         	   88689	     12778 ns/op
-BenchmarkSplit/regular/loop_1024/4096_(every_4_bytes)
 BenchmarkSplit/regular/loop_1024/4096_(every_4_bytes)-12            	  157082	      6790 ns/op
-BenchmarkSplit/regular/index_byte_1024/4096_(every_4_bytes)
 BenchmarkSplit/regular/index_byte_1024/4096_(every_4_bytes)-12      	   89848	     12187 ns/op
-BenchmarkSplit/regular/stdlib__512/4096_(every_8_bytes)
 BenchmarkSplit/regular/stdlib__512/4096_(every_8_bytes)-12          	  172611	      6424 ns/op
-BenchmarkSplit/regular/loop_512/4096_(every_8_bytes)
 BenchmarkSplit/regular/loop_512/4096_(every_8_bytes)-12             	  244236	      4214 ns/op
-BenchmarkSplit/regular/index_byte_512/4096_(every_8_bytes)
 BenchmarkSplit/regular/index_byte_512/4096_(every_8_bytes)-12       	  175382	      6157 ns/op
-BenchmarkSplit/regular/stdlib__256/4096_(every_16_bytes)
 BenchmarkSplit/regular/stdlib__256/4096_(every_16_bytes)-12         	  353360	      3254 ns/op
-BenchmarkSplit/regular/loop_256/4096_(every_16_bytes)
 BenchmarkSplit/regular/loop_256/4096_(every_16_bytes)-12            	  448326	      2667 ns/op
-BenchmarkSplit/regular/index_byte_256/4096_(every_16_bytes)
 BenchmarkSplit/regular/index_byte_256/4096_(every_16_bytes)-12      	  356280	      3084 ns/op
-BenchmarkSplit/regular/stdlib__128/4096_(every_32_bytes)
 BenchmarkSplit/regular/stdlib__128/4096_(every_32_bytes)-12         	  605361	      1726 ns/op
-BenchmarkSplit/regular/loop_128/4096_(every_32_bytes)
 BenchmarkSplit/regular/loop_128/4096_(every_32_bytes)-12            	  360928	      3227 ns/op
-BenchmarkSplit/regular/index_byte_128/4096_(every_32_bytes)
 BenchmarkSplit/regular/index_byte_128/4096_(every_32_bytes)-12      	  740144	      1614 ns/op
-BenchmarkSplit/regular/stdlib__64/4096_(every_64_bytes)
 BenchmarkSplit/regular/stdlib__64/4096_(every_64_bytes)-12          	 1209298	       983.7 ns/op
-BenchmarkSplit/regular/loop_64/4096_(every_64_bytes)
 BenchmarkSplit/regular/loop_64/4096_(every_64_bytes)-12             	  643939	      1617 ns/op
-BenchmarkSplit/regular/index_byte_64/4096_(every_64_bytes)
 BenchmarkSplit/regular/index_byte_64/4096_(every_64_bytes)-12       	 1265182	       944.2 ns/op
-BenchmarkSplit/regular/stdlib__32/4096_(every_128_bytes)
 BenchmarkSplit/regular/stdlib__32/4096_(every_128_bytes)-12         	 2005394	       595.5 ns/op
-BenchmarkSplit/regular/loop_32/4096_(every_128_bytes)
 BenchmarkSplit/regular/loop_32/4096_(every_128_bytes)-12            	  643540	      1672 ns/op
-BenchmarkSplit/regular/index_byte_32/4096_(every_128_bytes)
 BenchmarkSplit/regular/index_byte_32/4096_(every_128_bytes)-12      	 2070046	       571.0 ns/op
-BenchmarkSplit/regular/stdlib__16/4096_(every_256_bytes)
 BenchmarkSplit/regular/stdlib__16/4096_(every_256_bytes)-12         	 3019016	       395.0 ns/op
-BenchmarkSplit/regular/loop_16/4096_(every_256_bytes)
 BenchmarkSplit/regular/loop_16/4096_(every_256_bytes)-12            	  803270	      1304 ns/op
-BenchmarkSplit/regular/index_byte_16/4096_(every_256_bytes)
 BenchmarkSplit/regular/index_byte_16/4096_(every_256_bytes)-12      	 3095602	       383.9 ns/op
-BenchmarkSplit/regular/stdlib__8/4096_(every_512_bytes)
 BenchmarkSplit/regular/stdlib__8/4096_(every_512_bytes)-12          	 4038997	       297.5 ns/op
-BenchmarkSplit/regular/loop_8/4096_(every_512_bytes)
 BenchmarkSplit/regular/loop_8/4096_(every_512_bytes)-12             	  948709	      1132 ns/op
-BenchmarkSplit/regular/index_byte_8/4096_(every_512_bytes)
 BenchmarkSplit/regular/index_byte_8/4096_(every_512_bytes)-12       	 4130055	       291.3 ns/op
-BenchmarkSplit/regular/stdlib__4/4096_(every_1024_bytes)
 BenchmarkSplit/regular/stdlib__4/4096_(every_1024_bytes)-12         	 5199528	       229.8 ns/op
-BenchmarkSplit/regular/loop_4/4096_(every_1024_bytes)
 BenchmarkSplit/regular/loop_4/4096_(every_1024_bytes)-12            	 1259064	      1074 ns/op
-BenchmarkSplit/regular/index_byte_4/4096_(every_1024_bytes)
 BenchmarkSplit/regular/index_byte_4/4096_(every_1024_bytes)-12      	 5118482	       224.9 ns/op
-BenchmarkSplit/regular/stdlib__2/4096_(every_2048_bytes)
 BenchmarkSplit/regular/stdlib__2/4096_(every_2048_bytes)-12         	 6120465	       193.2 ns/op
-BenchmarkSplit/regular/loop_2/4096_(every_2048_bytes)
 BenchmarkSplit/regular/loop_2/4096_(every_2048_bytes)-12            	 1808124	       668.1 ns/op
-BenchmarkSplit/regular/index_byte_2/4096_(every_2048_bytes)
 BenchmarkSplit/regular/index_byte_2/4096_(every_2048_bytes)-12      	 6126540	       188.9 ns/op
